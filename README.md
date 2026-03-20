@@ -1,131 +1,56 @@
-Guide Wire readme doc
+🛡 RakshakPay — AI Income Protection for Gig Workers
+Parametric insurance for gig workers that pays instantly during disruptions — no claims, no paperwork, just UPI payouts.
 
+📌 Problem
+India’s 1.2+ crore gig workers (Swiggy, Zomato, Blinkit, etc.) lose 20–30% income due to:
+Heavy rains, heatwaves, pollution
+Curfews, strikes, disasters
+🚫 No income protection exists today.
 
+💡 Solution
+RakshakPay is an AI-powered platform that:
+Auto-detects disruptions
+Triggers payouts instantly
+Requires zero manual claims
 
-🚀 Project Title: RakshakPay
+🎯 Key Features
+🔗 Multi-app linking (Swiggy, Zomato, Blinkit, etc.)
+🤖 AI risk pricing (₹25–₹80/week)
+⚡ Auto payouts via UPI
+🔍 Fraud detection (GPS + activity checks)
+📊 Weekly plans aligned with earnings
 
-AI-Powered Parametric Insurance for Gig Workers
+⚙️ How It Works
+Worker links delivery apps
+AI calculates weekly premium
+System monitors weather, AQI, alerts
+If disruption occurs → payout auto-triggered
+💸 Payout = 70% × avg daily income × affected days
 
-📌 Problem Statement
+🏗 Architecture
 
-India’s gig workers (delivery partners) face income loss due to external disruptions like weather, pollution, or curfews. Currently, there is no system to protect their daily earnings.
-This project builds an AI-powered parametric insurance platform that provides automatic income protection based on real-world triggers.
+Microservices-based system:
+Onboarding
+Risk Engine (XGBoost)
+Policy Engine
+Disruption Monitor
+Claims Automation
+Fraud Detection
+Payout Service
+Analytics Dashboard
 
-📄 Based on problem statement:
+🛠 Tech Stack
 
-🎯 Objective
+Backend: Python (FastAPI), Node.js
+AI/ML: XGBoost, Isolation Forest, Prophet
+Infra: Kafka, Docker, Kubernetes
+DB: PostgreSQL, Redis, ClickHouse
+Frontend: React Native, Next.js
 
-To design a system that:
+💰 Pricing
+Lite: ₹25/week
+Pro: ₹45/week 
+Max: ₹80/week
 
-Calculates weekly insurance premium using AI
-Detects external disruptions automatically
-Triggers instant claim payouts
-Prevents fraud using intelligent validation
-
-👤 Target Persona
-
-Food Delivery Partner (Swiggy/Zomato)
-Scenario:
-Works 8–10 hours/day
-Income depends on daily deliveries
-Heavy rain → cannot work → income loss
-
-⚙️ System Workflow
-User Registration →  
-Risk Profiling (AI) →  
-Weekly Premium Calculation →  
-Policy Activation →  
-Real-Time Monitoring (Weather/API) →  
-Disruption Detected →  
-Auto Claim Triggered →  
-Instant Payout
-💰 Weekly Premium Model
-
-Premium is dynamically calculated based on:
-
-Factor	Impact
-Location Risk	High flood zone → ↑ premium
-Weather Forecast	Rainy week → ↑ premium
-Work Hours	More hours → ↑ coverage
-Historical Safety	Safe user → ↓ premium
-Example:
-Base Premium = ₹50
-+ Rain Risk = ₹20
-- Safe Zone Discount = ₹10
-
-Final Premium = ₹60/week
-🌦️ Parametric Triggers
-Event	Condition
-Heavy Rain	Rainfall > 50mm
-Heatwave	Temp > 40°C
-Pollution	AQI > 300
-Curfew	Govt / Mock API
-
-👉 If triggered → automatic payout (₹300–₹800)
-
-🤖 AI/ML Integration
-1. Risk Prediction Model
-Predicts probability of disruption
-Used for premium calculation
-
-2. Fraud Detection Model
-Detects:
-GPS spoofing
-Fake claims
-Duplicate claims
-
-🔐 Fraud Detection Logic
-Compare user GPS vs API location
-Detect repeated claims
-Validate activity logs
-
-🏗️ Tech Stack
-Layer	Technology
-Frontend	React.js
-Backend		Node.js / Flask
-ML Model	Python (scikit-learn)
-Database	MongoDB
-APIs		Weather API (OpenWeather)
-Payments	Razorpay (test mode)
-📊 Dashboard
-👤 Worker Dashboard:
-
-Weekly coverage
-Earnings protected
-Claim history
-
-🛠️ Admin Dashboard:
-Risk zones
-Fraud alerts
-Claim analytics
-
-🔥 Unique Features
-Zero-touch claim system
-Hyperlocal AI pricing
-Real-time disruption detection
-Instant payout simulation
-
-🧪 MVP Features
-
-User registration
-Premium calculator
-Weather trigger simulation
-Auto payout system
-Basic dashboard
-
-📅 Development Plan
-Phase 1:
-Idea + README + basic UI
-
-Phase 2:
-Backend + APIs + ML integration
-
-Phase 3:
-Fraud detection + dashboard + scaling
-
-🎥 Demo Plan
-User logs in
-Simulate heavy rain
-System detects disruption
-Claim triggered automatically
-₹ credited instantly
+🚀 Vision
+To become the financial safety net for India’s gig workforce, starting with pilots in metro cities and scaling nationwide.
