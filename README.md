@@ -2,7 +2,7 @@ Guide Wire readme doc
 
 
 
-🚀 Project Title: GigShield AI
+🚀 Project Title: RakshakPay
 
 AI-Powered Parametric Insurance for Gig Workers
 
